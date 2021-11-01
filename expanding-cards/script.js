@@ -26,21 +26,23 @@ const cards = [
     },
 ];
 
-main();
 
+insertCards();
 
-function main(){
-    // create cards
-    insertCards();
-}
-
+/**
+ * generates cards dynamically based on the cards Array
+ */
 function insertCards() {
     const cardsContainer = document.querySelector('.cards-container');
     for (const item of cards) {
+
+        // creates card elements dynamically
         let card = document.createElement('div');
         card.className = 'card';
         card.id = item.id;
         card.style.backgroundImage = `url(${item.image})`;
+
+        // adds event listener to card element
         card.addEventListener('click', () => {
             const cardsRef = document.querySelectorAll('.card');
             for (const refObj of cardsRef) {
@@ -49,8 +51,12 @@ function insertCards() {
                 refObj.classList.remove('active');
             }
         });
+
+        // creates heading
         let heading = document.createElement('h3');
         heading.innerHTML = item.heading;
+
+        // appends the created elements
         card.appendChild(heading);
         cardsContainer.appendChild(card);
     } 
