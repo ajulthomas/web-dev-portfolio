@@ -1,0 +1,38 @@
+main {
+	background-color: #b1b1b1;
+	border-radius: 8px;
+	padding: 24px;
+	text-align: center;
+}
+
+.stepper-container{
+	margin-top: 12px;
+	margin-bottom: 15px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.progress-bar {
+	width: 75%;
+	height: 4px;
+	background-color: #fff;
+	margin: auto;
+	position: absolute;
+	bottom: -8px;
+}
+
+.progress {
+width: 30%;
+height: 100%;
+background-color: #00ff00;
+}
+
+.check-points {
+width: 75%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
