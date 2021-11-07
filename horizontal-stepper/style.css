@@ -10,6 +10,7 @@ main {
 	margin-bottom: 15px;
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -20,11 +21,10 @@ main {
 	background-color: #fff;
 	margin: auto;
 	position: absolute;
-	bottom: -8px;
 }
 
 .progress {
-width: 30%;
+width: 33.3333%;
 height: 100%;
 background-color: #00ff00;
 }
@@ -35,4 +35,20 @@ margin: auto;
 display: flex;
 align-items: center;
 justify-content: space-between;
+}
+
+.check-points > span {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #fff;
+	z-index: 100;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.active {
+	border: 2px solid #00ff00;
 }
